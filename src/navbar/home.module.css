@@ -1,0 +1,191 @@
+/* 🌟 Light Mode (Default) */
+.container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7fc;
+}
+
+/* 🌟 Header */
+.header {
+  background-color: #554e87;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* 📌 About Section */
+.aboutSection {
+  margin-bottom: 40px;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ✅ Points List */
+.pointsList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.point {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.point:hover {
+  transform: translateY(-5px);
+}
+
+.point strong {
+  color: #61dafb;
+}
+
+/* 🔽 Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 🎯 Button Group */
+.buttongroup {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px;
+  margin: 20px auto;
+}
+
+/* 🎨 Document Button */
+.documentButton {
+  padding: 0.6em 2em;
+  border: none;
+  color: white;
+  background: #323131;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.documentButton:hover {
+  background-color: rgba(210, 223, 207, 0.3);
+}
+
+/* ✨ Glowing Animation */
+.documentButton:before {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #ff0000, #ff7300, #fffb00, #48ff00, 
+      #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button 20s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.documentButton:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6f64c3;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+/* 🌙 DARK MODE STYLES */
+.darkMode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Dark Mode Header */
+.darkMode .header {
+  background-color: #2b2b4f !important;
+}
+
+.darkMode .title, 
+.darkMode .subTitle {
+  color: #f39c12 !important;
+}
+
+.darkMode .intro {
+  color: #ffcc80 !important;
+}
+
+/* Dark Mode Points */
+.darkMode .point {
+  background-color: #222 !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1) !important;
+}
+
+.darkMode .point strong {
+  color: #29b6f6 !important;
+}
+
+/* Dark Mode Footer */
+.darkMode .footer {
+  color: #dcdcdc !important;
+}
+
+/* Dark Mode Button */
+.darkMode .documentButton {
+  background-color: #ff9800 !important;
+  color: #121212 !important;
+}
+
+.darkMode .documentButton:hover {
+  background-color: #e67e22 !important;
+}

@@ -1,0 +1,31 @@
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: none;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #347c13;
+    padding: 8px;
+    text-align: center;
+   
+  }
+  
+  .table th {
+    background-color: #4b4e6c;
+    border: black;
+  }
+  
+ 
+  

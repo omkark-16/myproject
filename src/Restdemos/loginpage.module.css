@@ -1,0 +1,94 @@
+🌟 Centering the Login Page
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    background-color: #f0f2f5; /* Light mode background */
+}
+
+/* 🎯 Wrapper for Form to Avoid Side Issues */
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+/* 🎨 Centered Form */
+.form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* 🌙 Dark Mode */
+.dark {
+    background-color: #111;
+    color: white;
+}
+
+.dark .form {
+    background-color: #222;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 📝 Input Fields */
+.inputGroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 🌙 Dark Mode Inputs */
+.dark .input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* 🔘 Button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #05002dcb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark .button {
+    background-color: #4a0080;
+}
+
+.button:hover {
+    background-color: #2a004b;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    .form {
+        padding: 15px;
+        margin: 10px;
+    }
+}

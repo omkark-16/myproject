@@ -1,0 +1,160 @@
+
+.form {
+    /* background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    
+     */
+  }
+  .heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; 
+  }
+
+  
+  
+  .react-datepicker__input-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    background-color: #05002dcb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .input:focus, .button:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  @media (max-width: 600px) {
+    .form {
+      padding: 15px;
+      margin: 10px;
+      max-width: 100%;
+    }
+  
+    .heading {
+      font-size: 20px;
+      
+    }
+  }
+
+
+  .boxsizing{
+    margin-top: 10%;
+  }
+  
+
+  .error{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+.confirmationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); 
+}
+
+.confirmationMessage {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.confirmationContainer.error .confirmationMessage {
+  background-color: #f8d7da; 
+  color: #721c24;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  animation: spin 2s linear infinite; 
+  margin: 10px auto; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+}
+
+.wrapper {
+  position: fixed;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%); /* Centers the form */
+  min-width: 300px;
+  width: 400px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

@@ -1,0 +1,118 @@
+.header {
+  background-color: #05002d;
+  color: #fff;
+  height: 60px; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 2px 10px 10px 2px rgba(10, 10, 10, 0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0 20px; 
+  height: 100%;
+}
+
+.appname {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.link {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.link-sub {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link-sub:hover {
+  color: #3498db;
+}
+
+.login-tab {
+  margin-left: auto; 
+}
+
+.logout-btn {
+ 
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: rgba(255, 43, 43, 0.801);
+}
+
+.header-container img {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader::before {
+  content: "";
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #e74c3c;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f39c12;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.header-container .link {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.header-container .login-tab, .logout-btn {
+  display: inline-block;
+}

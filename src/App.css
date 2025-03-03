@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+}
+
+
+   
+
+
+table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow-x: auto;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #2b2153;  
+}
+
+th {
+  background-color: #05002dc9; 
+  color: white;
+  font-weight: bold;
+  padding: 14px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #2b2153;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #ffe5e0;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  padding: 15px;
+}
+
+.pagination button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ff4b38;
+}
+
+@media screen and (max-width: 900px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  .pagination button {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}
+
+
+
+
+  
+
+
+.App-logo {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Default Light Mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+body.dark .navbar {
+  background-color: #333;
+  color: white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #eeeeee;
+  padding: 10px;
+  width: 200px;
+  color: #000000;
+}
+
+body.dark .sidebar {
+  background-color: #222;
+  color: white;
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body.dark form {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* Button */
+button {
+  background-color: #568ec9;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+body.dark button {
+  background-color: #d51d1d;
+  color: white;
+}
+

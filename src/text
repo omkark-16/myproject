@@ -1,0 +1,23 @@
+<!-- {/* {location.pathname === '/labs' && (
+        <div>
+          <iframe
+            src="http://localhost:3000" 
+            title="Project 1"
+            width="100%"
+            height="600px"
+            style={{ border: 'none' }}
+          ></iframe>
+        </div>
+      )}
+
+      {location.pathname === '/classwork' && (
+        <div>
+          <iframe
+            src="http://localhost:3001" 
+            title="Project 2"
+            width="100%"
+            height="600px"
+            style={{ border: 'none' }}
+          ></iframe>
+        </div>
+      )} */} -->
